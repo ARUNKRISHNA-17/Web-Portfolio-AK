@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunkrishna Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="fanta.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">Arun K</a>
+        <nav>
+            <a target="_blank" href="https://github.com/ARUNKRISHNA-17"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/arunkrishna-e-s-571a63256/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Kon'nichiwa! I am Arunkrishna...</h1>
+                <p>Web App Developer</p>
+            </div>
+            <h5 class="intro-description">
+                An electronics engineer by qualification, and a web app developer by intrest.
+                Based in India. I love to play video games, read mythology books and build useful
+                web applications!
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a target="_blank" href="mailto:esarunkrishna@gmail.com">Email me</a>
+                    <a target="_blank" href="https://github.com/ARUNKRISHNA-17">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/arunkrishna-e-s-571a63256/">LinkedIn</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play Game ?</button>
+            </div>
+            <div style="display: none;"class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... Now it's ruined!</p>
+                <input type="color" id="color-picker"onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>OOPS | Core Java | Data Structures</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend Development</td>
+                        <td>ReactJS | NextJS | Figma</td>
+                    </tr>
+                    <tr>
+                        <td>Backend Development</td>
+                        <td>Springboot | JavaScript </td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td>MySQL | Firebase</td>
+                    </tr>
+                    <tr>
+                        <td>Data Analysis</td>
+                        <td>Power BI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>July 19,2023</p>
+                        <h4>Laptronics</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>SpringBoot</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>MySQL</p>
+                            </div>
+                        </div>
+                        <p>Search and Find your dream Laptop. Get what you
+                            are the most comfortable with at the lowest price.</p>
+                            <div class="project-links">
+                                <a target="_blank" 
+                                href="https://github.com/ARUNKRISHNA-17/Frontend-IVth-Semester-RESTAPI">Github</a>
+                            </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/laptronics sample.png" alt="laptronics-thumbnail"/>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>March 24,2025</p>
+                        <h4>The Brogram</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p> FantaCSS </p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p> ReactJS </p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p> JavaScript </p>
+                            </div>
+                        </div>
+                        <p>A 30 Simple Workout Training Program to stay fit and healthy.
+                            Join now to make use of the workout program.</p>
+                            <div class="project-links">
+                                <a target="_blank" 
+                                href="https://github.com/ARUNKRISHNA-17/OptimumRise-Udemy-Course">Github</a>
+                                <a target="_blank" 
+                                href="https://optimumrise.netlify.app">Live Link</a>
+                            </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/brogram.png" alt="brogram-thumbnail"/>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>April 6,2025</p>
+                        <h4>Expenny</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Next JS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Fantacss</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p>Search and Find your dream Laptop. Get what you
+                            are the most comfortable with at the lowest price.</p>
+                            <div class="project-links">
+                                <a target="_blank" 
+                                href="https://github.com/ARUNKRISHNA-17/Frontend-IVth-Semester-RESTAPI">Github</a>
+                                <a target="_blank" 
+                                href="https://ak-sub-tracker.netlify.app/">Live Link</a>
+                            </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/expenny.png" alt="laptronics-thumbnail"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> By <a>Arunkrishna</a> Support me on <a target="_blank" href="https://www.github.com/ARUNKRISHNA-17">Github</a></p>
+    </footer>
+    <script>
+        // This is where we create the interactivity for our little color switching game
+
+        //1.select all the html elemets so that we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        //2.create the functions
+        function playGame(){
+            //This function enables the play of the game by showing the color selector input
+            colorDiv.style.display='block'
+            playBtn.style.display='none'
+        }
+
+        function changeColor(){
+            //take the user's selected color on the input, and assign it to the background color of the website
+            const selectedColor = colorInput.value
+            body.style.background=selectedColor
+            resetBtn.style.display='block'
+            hiddenText.style.display='block'
+            colorInput.style.display='none'
+        }
+
+        function resetColor(){
+            body.style.background='white'
+            colorInput.style.display='block'
+            playBtn.style.display='block'
+            hiddenText.style.display='none'
+            resetBtn.style.display='none'
+            colorDiv.style.display='none'
+        }
+
+        //3.is to assign the functions to the button by adding the function call to the actual element(done above in the html code)
+    </script>
+</body>
+</html>
