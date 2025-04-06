@@ -72,6 +72,10 @@ section{
     gap: 1rem;
 }
 
+.project-card > div:first-of-type{
+    flex: 1;
+}
+
 .project-links{
     display: flex;
     align-items: center;
